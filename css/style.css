@@ -53,7 +53,7 @@ ul{
       display: flex;
       flex-flow: row wrap;
       align-content: flex-start;
-      padding: 0.2em;
+      padding: 0.1em;
     }
     .card {
       margin: 0.5em 1.2em 0.5em 0.1em;
@@ -72,9 +72,7 @@ ul{
       -o-object-fit: cover;
          object-fit: cover;
       flex: 1 1 auto;
-      
       border-radius: 15px 5px 5px 15px;
-      
     }
     .card-bodyteam {
       width: 12em;
@@ -128,7 +126,7 @@ ul{
     a:hover {
       text-decoration: underline;
     }
-    ifooter {
+    .ifooter {
       position:relative;
       left: 0;
       bottom: 0;
