@@ -356,7 +356,7 @@ ul{
 }
 .home-img img{
     max-width: 250px;
-    width: 100%;
+    width: 50%;
     box-shadow: var(--shadow-black-100);
     border-radius: 32px;
     animation: bounceTop_01 3s ease infinite;
