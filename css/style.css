@@ -370,8 +370,8 @@ ul{
 .home-img .circle{
     position: absolute;
     z-index: 1;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 50%;
     top: 50%;
