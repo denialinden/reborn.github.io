@@ -1237,7 +1237,7 @@ body{
   overflow:hidden;
 }
 
-ul{
+ulreborn{
   margin:0;
   padding:0;
 }
@@ -1260,7 +1260,7 @@ ul{
 }
 
 /* Header **/
-header{
+headerreborn{
   background:#35424a;
   color:#ffffff;
   padding-top:30px;
@@ -1268,14 +1268,14 @@ header{
   border-bottom:#e8491d 3px solid;
 }
 
-header a{
+header areborn{
   color:#ffffff;
   text-decoration:none;
   text-transform: uppercase;
   font-size:16px;
 }
 
-header li{
+header lireborn{
   float:left;
   display:inline;
   padding: 0 20px 0 20px;
