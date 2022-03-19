@@ -364,6 +364,8 @@ ul{
 }
 .home-img{
     position: relative;
+    height: 200px;
+    width: 200px;
 }
 .home-img .circle{
     position: absolute;
