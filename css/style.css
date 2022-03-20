@@ -368,12 +368,12 @@ ul{
     box-shadow: var(--shadow-black-100);
     border-radius: 22px;
     animation: bounceTop_01 3s ease infinite;
-    right: 0px;
+    right: -40px;
 }
 .home-img-baner{
     position: relative;
     height: 200px;
-    width: 400px;
+    width: 300px;
 }
 .home-img{
     position: relative;
