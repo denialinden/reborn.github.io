@@ -362,7 +362,7 @@ ul{
     animation: bounceTop_01 3s ease infinite;
     right: -30px;
 }
-.home-img-baner imgbaner{
+.home-img imgbaner{
     max-width: 250px;
     width: 100%;
     box-shadow: var(--shadow-black-100);
@@ -373,6 +373,11 @@ ul{
 .home-img-baner{
     position: relative;
     height: 200px;
+    width: 400px;
+}
+.home-img{
+    position: relative;
+    height: 400px;
     width: 400px;
 }
 .home-img .circle{
