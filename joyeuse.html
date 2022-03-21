@@ -46,23 +46,19 @@
       font: bold 18px Roboto;
     }
     .icard {
-      margin: 0.5em 0.5em 0.5em 0.5em;
-      height: 14em;
+      margin: 0.5em 0.5em;
       max-width: 99%;
-      flex: 1 1 auto;
-      display: flex;
       background-color:#f7e8d8;
       box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
       border-radius: 15px;
-      padding: -20px;
+      padding: 8px;
     }
     .icard img {
-      height: 100%;
-      max-width: 10em;
+      height: 20%;
+      width: 100%;
       -o-object-fit: cover;
          object-fit: cover;
       flex: 1 1 auto;
-      
       border-radius: 15px 5px 5px 15px;
       
     }
@@ -121,11 +117,27 @@
     color: var(--main-color);
     text-transform: capitalize;
     text-align: center;
-    margin: 0.5px;
+    margin: 0px;
 }
 .section-title h2 span{
     color: var(--color-4);
 }
+table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px #bb7d02;
+            color: #0400ff;
+        }
+        th, td {
+            padding: 0px;
+            background-color: #00000081;
+            color: #ffffff;
+        }
+        th {
+            background-color: #ffffff;
+            color: #c27e04;
+        }
     </style>
 </head>
 <body>
@@ -142,7 +154,7 @@
     <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
       <div class='container'>
         
-        <div class='card'>
+        <div class='icard'>
             <img src='img/team/IMG_20220320_150857_616.jpg'>
             <div class='card-body'>
             <div class='card-text'>
@@ -157,60 +169,39 @@
         </div>
     </section>
     <!-- Home Section End -->
-    
-    <!-- ======= Downloads ======= -->
-    <section class="textsection-title" id="downloads">
-    <div class="icard">
-      <table class="textsection-title">
-        <thead>
+    <section class="section-title" id="downloads">
+      <div class="icontainer">
+    <table class="table table-striped">
         <tr>
+            <h2 colspan="8">List Rom for #Joyeuse</h2>
+        </tr>
+        <tr>
+            <th>Mod</th>
           <th>Version</th>
-          <th>Miui</th>
           <th>Status</th>
           <th>Date</th>
-          <th>Filesize</th>
-          <th>Links</th>
-        </tr>
-        <tbody>
-        <tr>
-            <td>v1.5</td>
-          <td>V12.0.8.0</td>
-          <td>Paid</td>
-          <td>25.Sep.2021</td>
-          <td>2.2GB</td>
-          <td><a href="https://t.me/Dens_play89">Download</a></td>
-        </tr>
-        <tr>
-            <td>v1.6</td>
-          <td>V12.0.3.0</td>
-          <td>Paid</td>
-          <td>05.Okt.2021</td>
-          <td>2.2GB</td>
-          <td><a href="https://t.me/Dens_play89">Download</a></td>
+          <th>Size</th>
+          <th>Link</th>
         </tr>
         <tr>
             <td>v1.7</td>
-          <td>V12.10.14-Eop</td>
+          <td>V12.10.14</td>
           <td>Paid</td>
-          <td>15.Okt.2021</td>
-          <td>2.1GB</td>
+          <td>21.Okt.21</td>
+          <td>2.8GB</td>
           <td><a href="https://t.me/Dens_play89">Download</a></td>
         </tr>
         <tr>
         <td>v1.8</td>
-          <td>V12.12.12-Eop</td>
+          <td>V12.12.12</td>
           <td>Paid</td>
-          <td>13.Des.2021</td>
-          <td>2.1GB</td>
+          <td>29.Jan.22</td>
+          <td>2.7GB</td>
           <td><a href="https://t.me/Dens_play89">Download</a></td>
           </tr>
-        </tbody>
+        </div>
         </table>
-      </div>
-    </section>
-    <!-- ======= Downloads ======= -->
-    
-    <!-- ======= Footer ======= -->
+        </section>
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
@@ -218,7 +209,7 @@
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li><i class="fa-solid fa-chevron-right"></i> <a href="#home">Home</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="index.html">Home</a></li>
               </ul>
             </div>
             </div>
@@ -230,8 +221,7 @@
           &copy; Copyright 2021-2022 <strong><span>Miui Reborn</span></strong>. All Rights Reserved
         </div>
       </div>
-    </footer><!-- End Footer -->
-    
+    </footer>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
