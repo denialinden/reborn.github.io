@@ -13,136 +13,207 @@
     <link rel="stylesheet" href="css/font-awesome.css"> 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-  
+  <style>
+    html,body {
+      margin: 0; padding:0;
+      width: 100vw;
+      overflow-x: hidden;
+      background-color: #fcdaa9;
+      font: 14px 'Open Sans', sans-serif;
+      line-height: 1.4em;
+      color: #404646;
+    }
+    .icontainer {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 5px 2px 2px 5px;
+      display: flex;
+      flex-flow: row wrap;
+      align-content:flex-start;
+      padding: 5px;
+    }
+    .icard-body button {
+      min-width: 8.3em;
+      flex: none;
+      align-self: flex-flow;
+      margin-top: auto;
+      padding: 0.16em 0.1em;
+      font-size: 0.92em;
+      color: #bb7d02;
+      background:#fcdaa9;
+      border: 0.8px solid #bb7d02;
+      border-radius: 15px 5px 15px 5px;
+      font: bold 18px Roboto;
+    }
+    .icard {
+      margin: 0.5em 0.5em;
+      max-width: 99%;
+      background-color:#f7e8d8;
+      box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+      border-radius: 15px;
+      padding: 8px;
+    }
+    .icard img {
+      height: 20%;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      flex: 1 1 auto;
+      border-radius: 15px 5px 5px 15px;
+      
+    }
+    .icard-body {
+      width: 12em;
+      max-height: 100%;
+      flex: 1 1 auto;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      padding: 5px;
+    }
+    .icard-text {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 0 0.8em 10px;
+      padding: 0;
+    }
+    .icard-text h3, .card-text p {
+      margin-top: 0;
+    }
+    .icard-text:after {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      width: 100%;
+      height: 1em;
+      background: linear-gradient(rgba(255, 255, 255, 0), #f7e8d8);
+    }
+    .isection-padding{
+    padding: 0px 0px;
+}
+.btn-reg{
+    background-color: var(--main-color);
+    padding: 10px 10px 10px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500;
+}
+.section-padding{
+    padding: 10px 0;
+}
+.section-title{
+    margin-bottom: 60px;
+}
+.
+.textsection-title{
+    font-size: 12px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px;
+}
+.section-title h2 span{
+    color: var(--color-4);
+}
+table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px #bb7d02;
+            color: #0400ff;
+        }
+        th, td {
+            padding: 0px;
+            background-color: #00000081;
+            color: #ffffff;
+        }
+        th {
+            background-color: #ffffff;
+            color: #c27e04;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar Section Start -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <a class="navbar-brand" href="#">REBORN-UI</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <i class="fas fa-bars"></i>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" data-scroll-nav="0" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="1" href="#feature">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="2" href="#screenshoots">Screenshots</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="3" href="#support">Support</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-scroll-nav="4" href="#fun-facts">About</a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="#">REBORN-UI #Mojito</a>
       </div>
     </nav>
     <!-- Navbar Section End -->
     
     <!-- Home Section Start -->
     <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
-      <div class="effect-wrap">
-        <i class="fas fa-plus effect effect-1"></i>
-        <i class="fas fa-plus effect effect-2"></i>
-        <i class="fas fa-circle-notch effect effect-3"></i>
-      </div>
-      <div class="container align-items-center">
-        <div class="row">
-          <div class="col-lg-7 col-md-7">
-            <div class="home-text">
-              <h1>Miui Reborn</h1>
-              <p>Welcome To Reborn Website? Found Something Here And Enjoy It!</p>
-              <div class="home-btn">
-                <a href="#downloads" class="btn btn-1"> Download</a>
-              </div>
+      <div class='container'>
+        
+        <div class='icard'>
+            <img src='img/team/IMG_20220320_150857_616.jpg'>
+            <div class='card-body'>
+            <div class='card-text'>
+                <h3>Support Devices List</h3>
+                <p>This CustomRom is paid status.. so for those who are not yet a VVip member, please register first if you want to get a rom link</p>
+                
             </div>
-          </div>
-          <div class="col-lg-5 col-md-5 text-center">
-            <div class="home-img">
-              <div class="circle">
+            <body>
+    <a class="btn btn-reg" href="https://t.me/Dens_play89">Register</a>
+  </body>
             </div>
-              <img src="img/screenshots/1.png" alt="reborn">
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- Home Section End -->
-    
-    <!-- ======= Downloads ======= -->
-    <section class="downloads section-padding" id="downloads">
-    <div class="container">
-      <table class="table table-striped">
-        <thead>
+    <section class="section-title" id="downloads">
+      <div class="icontainer">
+    <table class="table table-striped">
         <tr>
-          <th>No</th>
+            <h2 colspan="8">List Rom for #Mojito</h2>
+        </tr>
+        <tr>
+            <th>Mod</th>
           <th>Version</th>
           <th>Status</th>
           <th>Date</th>
-          <th>Filesize</th>
-          <th>Links</th>
+          <th>Size</th>
+          <th>Link</th>
         </tr>
-        <tbody>
         <tr>
-          <td>1</td>
-          <td>V12.5.5</td>
+            <td>v1.0</td>
+          <td>V13.0.4</td>
           <td>Paid</td>
-          <td>12-06-2022</td>
-          <td>2.9GB</td>
-          <td><a href="masukin link nya disini">Here</a></td>
+          <td>1.Jan.23</td>
+          <td>0.0GB</td>
+          <td><a href="https://t.me/Dens_play89">Soon</a></td>
         </tr>
-          <td>1</td>
-          <td>V12.5.5</td>
-          <td>Paid</td>
-          <td>12-06-2022</td>
-          <td>2.9GB</td>
-          <td><a href="masukin link nya disini">Here</a></td>
-        </tr>
-        </tbody>
+        </div>
         </table>
-      </div>
-    </section>
-    <!-- ======= Downloads ======= -->
-    
-    <!-- ======= Footer ======= -->
+        </section>
     <footer id="footer">
       <div class="footer-top">
         <div class="container">
           <div class="row">
-
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li><i class="fa-solid fa-chevron-right"></i> <a href="#home">Home</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i> <a href="#feature">Features</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i> <a href="#screenshots">Screenshot</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i> <a href="#team">Team</a></li>
-                <li><i class="fa-solid fa-chevron-right"></i> <a href="https://t.me/reborn_port_diskus">Grup Supports</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="index.html">Home</a></li>
               </ul>
             </div>
-
             </div>
-
           </div>
         </div>
     </div>
-
     <div class="container">
       <div class="copyright">
-          &copy; Copyright 2021-2022 <strong><span>Reborn</span></strong>. All Rights Reserved
+          &copy; Copyright 2021-2022 <strong><span>Miui Reborn</span></strong>. All Rights Reserved
         </div>
       </div>
-    </footer><!-- End Footer -->
-    
+    </footer>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
@@ -154,5 +225,4 @@
     <script src="js/scrollIt.min.js"></script> <!-- scrollit scripts -->
     <script src="js/main.js"></script> <!-- Custom scripts -->
 </body>
-
 </html>
