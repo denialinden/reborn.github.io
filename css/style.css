@@ -355,7 +355,7 @@ ul{
     line-height: 50px;
 }
 .home-img img{
-    height: 200px;
+    height: 400px;
     width: 100%;
     box-shadow: var(--shadow-black-100);
     border-radius: 22px;
